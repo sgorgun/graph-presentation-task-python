@@ -2,17 +2,14 @@
 import random
 import pytest
 
-from tasks.adjacent_matrix import GraphAdjacentMatrix
+from tasks.adjacency_matrix import GraphAdjacencyMatrix
 
 
 @pytest.mark.timeout(2)
 def test_adjacency_matrix_sample():
     """Tests for adjacency matrix class."""
     num_of_vertices = 5
-    graph = GraphAdjacentMatrix(num_of_vertices)
-
-    with pytest.raises(ValueError):
-        _ = graph.is_edge(2, 7)
+    graph = GraphAdjacencyMatrix(num_of_vertices)
 
     assert graph.get_number_of_adjacent_vertices(0) == 0
 

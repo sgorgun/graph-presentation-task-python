@@ -2,17 +2,14 @@
 import random
 import pytest
 
-from tasks.adjacent_dict import GraphAdjacentDictionary
+from tasks.adjacency_dict import GraphAdjacencyDictionary
 
 
 @pytest.mark.timeout(2)
 def test_adjacency_list_sample():
     """Tests for adjacency dictionary class."""
     num_of_vertices = 5
-    graph = GraphAdjacentDictionary(num_of_vertices)
-
-    with pytest.raises(ValueError):
-        _ = graph.is_edge(2,7)
+    graph = GraphAdjacencyDictionary(num_of_vertices)
 
     assert graph.get_number_of_adjacent_vertices(0) == 0
 

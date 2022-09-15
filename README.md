@@ -3,7 +3,7 @@
 Set of programming assignments that are designed to test knowledge of graph representation.
 
 ## Problem 1: Present undirected graph using adjacency matrix
-Your first programming assignment is to implement the provided default interface for GraphAdjacencyMatrix. Tests will check your implementation in different scenarios. Number of vertices *N* is an input parameter, which shows that graph consists of *N* vertices from *0* to *N-1*.
+Your first programming assignment is to implement the provided default interface for _GraphAdjacencyMatrix_. Tests will check your implementation in different scenarios. Number of vertices *N* is an input parameter, which shows that graph consists of *N* vertices from *0* to *N-1*.
 Functionality that class should support:
 * add edge between vertices X and Y to the graph
 * get number of adjacent vertices
@@ -11,7 +11,7 @@ Functionality that class should support:
 * check whether edge between vertices X and Y exists
 
 ## Problem 2: Present undirected graph using adjacency dictionary
-Your task is to implement the provided default interface for GraphAdjacenyDictionary. Tests will check your implementation in different scenarios. Number of vertices *N* is an input parameter, which shows that graph consists of *N* vertices from *0* to *N-1*.
+Your task is to implement the provided default interface for _GraphAdjacencyDictionary_. Tests will check your implementation in different scenarios. Number of vertices *N* is an input parameter, which shows that graph consists of *N* vertices from *0* to *N-1*.
 Functionality that class should support:
 * add edge between vertices X and Y to the graph
 * get number of adjacent vertices
