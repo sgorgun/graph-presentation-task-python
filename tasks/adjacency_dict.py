@@ -3,7 +3,7 @@ from collections import defaultdict
 
 
 class GraphAdjacencyDictionary:
-    """Default interface for undirected gsraph using adjacency dictionary."""
+    """Default interface for undirected graph using adjacency dictionary."""
 
     def __init__(self, number_of_vertices: int):
         pass
