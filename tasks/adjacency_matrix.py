@@ -1,4 +1,4 @@
-"""Templates for programming assignments: Graph Adjacent Matrix."""
+"""Templates for programming assignments: Graph Adjacency Matrix."""
 from typing import Any, Optional
 
 
