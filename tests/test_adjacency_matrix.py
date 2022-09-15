@@ -18,8 +18,6 @@ def test_adjacency_matrix_sample():
 
     assert graph.get_number_of_adjacent_vertices(0) == 1
     assert graph.get_number_of_adjacent_vertices(1) == 2
-    with pytest.raises(ValueError):
-        _ = graph.get_number_of_adjacent_vertices(5) == 1
 
     for vertex in range(4):
         assert graph.is_edge(vertex, vertex+1) == True
