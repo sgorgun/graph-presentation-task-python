@@ -114,7 +114,7 @@ class GraphAdjacencyDictionary:
         pass
 ```
 
-As you can see the provided interface is identical to the `GraphAdjacencyMatrix`, but please note that the time complexity requirements are differ for `get_number_of_adjacent_vertices` and `is_edge` method (due to the different underlying data structures that should be used for implementing the interfaces).
+As you can see the provided interface is identical to the `GraphAdjacencyMatrix`, but please note that the time complexity requirements differ for `get_number_of_adjacent_vertices` and `is_edge` method (due to the different underlying data structures that should be used for implementing the interfaces).
 
 Please check the unit tests to get some understanding on how to use the class *in the field*.
 
