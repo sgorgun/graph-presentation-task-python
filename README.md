@@ -2,21 +2,21 @@
 
 ## Purpose
 
-The coding exercises are designed to test knowledge of the following concepts:
+The coding exercises are designed to test your knowledge of the following concepts:
 
-* Representation of graph in memory
-* Adjacency matrix as a data structure for representing graphs in memory
-* Adjacency dictionary as a data structure for representing graphs in memory
+* Representations of graphs in memory
+* An adjacency matrix as a data structure for representing graphs in memory
+* An adjacency dictionary as a data structure for representing graphs in memory
 
 ## Overview
 
 The coding exercises cover the following practical problems:
-* Implementing `Adjacency matrix` interface for undirected graphs
-* Implementing `Adjacency dictionary` interface for undirected graphs
+* Implementing the `Adjacency matrix` interface for undirected graphs
+* Implementing the `Adjacency dictionary` interface for undirected graphs
 
 ## Coding exercises
 
-### Exercise 1: Adjacency matrix interface for undirected graphs
+### Exercise 1: The adjacency matrix interface for undirected graphs
 
 Your task is to implement the following interface for `Adjacency matrix` data structure for representing undirected graphs in memory:
 
@@ -59,21 +59,21 @@ class GraphAdjacencyMatrix:
         pass
 ```
 
-As you can see there are multiple details that might need some clarification:
-* The class constructor expects a number `number_of_vertices`, which defines the number of vertices in the graph. You may assume that vertices are enumerated from *0* to *number_of_vertices - 1*.
-* `add_new_edge` method support addition of new edges to the graph
-* `get_number_of_adjacent_vertices` and `get_list_of_adjacent_vertices` methods are about getting some info regarding adjacent vertices for some vertex of interest.
-* `is_edge` method simply checks whether some edges of interest is present within the graph
+As you can see, multiple details might need clarification:
+* The class constructor expects the number `number_of_vertices`, which defines the number of vertices in the graph. You can assume that vertices are enumerated from *0* to *number_of_vertices - 1*.
+* The `add_new_edge` method helps add of new edges to the graph
+* The `get_number_of_adjacent_vertices` and `get_list_of_adjacent_vertices` methods are used to get information about vertices adjacent to a vertex of interest.
+* The `is_edge` method simply checks whether certain edges of interest are present in the graph.
 
-Please check the unit tests to get some understanding on how to use the class *in the field*.
+Please check the unit tests to gain an understanding of how to use the class *in the field*.
 
 <br>
 
-Please use a template for the implementation (tasks/adjacency_matrix:GraphAdjacencyMatrix).
+Please use the template `tasks/adjacency_matrix:GraphAdjacencyMatrix` for the implementation.
 
 
-### Exercise 2: Adjacency dictionary interface for undirected graphs
-Your task is to implement the following interface for `Adjacency matrix` data structure for representing undirected graphs in memory:
+### Exercise 2: The adjacency dictionary interface for undirected graphs
+Your task is to implement the following interface for the `Adjacency matrix` data structure, which is used to represent undirected graphs in memory:
 
 ```python
 class GraphAdjacencyDictionary:
@@ -114,10 +114,10 @@ class GraphAdjacencyDictionary:
         pass
 ```
 
-As you can see the provided interface is identical to the `GraphAdjacencyMatrix`, but please note that the time complexity requirements differ for `get_number_of_adjacent_vertices` and `is_edge` method (due to the different underlying data structures that should be used for implementing the interfaces).
+As you can see, the interface is identical to `GraphAdjacencyMatrix`, but please note that the time complexity requirements are different for the `get_number_of_adjacent_vertices` and `is_edge` methods (due to the different underlying data structures that are used to implement the interfaces).
 
-Please check the unit tests to get some understanding on how to use the class *in the field*.
+Please check the unit tests to gain an understanding of how to use the class *in the field*.
 
 <br>
 
-Please use a template for the implementation (tasks/adjacency_dict:GraphAdjacencyDictionary).
+Please use the template `tasks/adjacency_matrix:GraphAdjacencyDictionary` for the implementation.
