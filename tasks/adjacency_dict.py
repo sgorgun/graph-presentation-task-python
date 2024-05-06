@@ -15,9 +15,10 @@ class GraphAdjacencyDictionary:
 
         NOTE: O(1) complexity is expected for this operation.
         """
-        self.adjacency_dict[vertex1].append(vertex2)
-        self.adjacency_dict[vertex2].append(vertex1)
-
+        if vertex2 not in self.adjacency_dict[vertex1]:
+            self.adjacency_dict[vertex1].append(vertex2)
+        if vertex1 not in self.adjacency_dict[vertex2]:
+            self.adjacency_dict[vertex2].append(vertex1)
     def get_list_of_adjacent_vertices(self, vertex: int) -> List[int]:
         """Returns a 0/1 list for a given vertex that indicates vertices adjacent to it.
 
